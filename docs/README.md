@@ -1,163 +1,63 @@
-# Stephen Jackson vs Manu Ginobili: Statistical Analysis
+# Stephen Jackson vs Manu Ginobili: The "System" Variable Analysis
 
-## Project Overview
+> **Was Stephen Jackson held back by the Spurs system? Or did it make him better?**  
+> A data-driven investigation into NBA narratives using Python and historical statistics.
 
-This project provides a comprehensive, data-driven analysis of Stephen Jackson's claim that he was a better player than Manu Ginobili but was "hampered" by the San Antonio Spurs' system.
-
-## Files Included
-
-- **jackson_vs_ginobili_analysis.ipynb**: Main Jupyter notebook with complete analysis
-- **JacksonRS.pdf**: Stephen Jackson Regular Season statistics
-- **JacksonPS.pdf**: Stephen Jackson Playoff statistics
-- **ManuRS.pdf**: Manu Ginobili Regular Season statistics
-- **ManuPs.pdf**: Manu Ginobili Playoff statistics
-- **Manu Ginobili vs. Stephen Jackson Season by Season Comparison.pdf**: Detailed season-by-season comparison
-
-## Setup Instructions
-
-### 1. Virtual Environment (Already Created)
-
-The virtual environment has been set up in `.venv/`. All required packages are being installed.
-
-### 2. Required Packages
-
-The following packages are installed:
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- pdfplumber
-- PyPDF2
-- openpyxl
-- tabulate
-- jupyter
-
-### 3. Running the Notebook
-
-**Option A: Using Jupyter Notebook**
-```bash
-# Activate virtual environment
-.venv\Scripts\activate
-
-# Start Jupyter Notebook
-jupyter notebook
-
-# Open jackson_vs_ginobili_analysis.ipynb in the browser
-```
-
-**Option B: Using JupyterLab (Recommended)**
-```bash
-# Activate virtual environment
-.venv\Scripts\activate
-
-# Start JupyterLab
-jupyter lab
-
-# Open jackson_vs_ginobili_analysis.ipynb
-```
-
-**Option C: Using VS Code**
-1. Open VS Code in the current directory
-2. Install the "Jupyter" extension if not already installed
-3. Open `jackson_vs_ginobili_analysis.ipynb`
-4. Select the `.venv` Python interpreter when prompted
-5. Run cells individually or all at once
-
-## Analysis Structure
-
-The notebook is organized into 5 comprehensive steps:
-
-### Step 1: Teammate Comparison (Direct Overlap)
-Compares performance when both players were on the Spurs roster:
-- 2002-03 season (Championship year)
-- 2011-12 season (Jackson returned mid-season)
-- 2012-13 season (Both veterans)
-
-### Step 2: System Variable Analysis
-Tests whether Jackson's performance improved away from the Spurs:
-- Compares Jackson with Spurs vs. other teams
-- Analyzes volume vs. efficiency metrics
-- Evaluates the "hampered" hypothesis
-
-### Step 3: Career Totals - Macro View
-Provides a comprehensive career comparison:
-- Longevity and games played
-- Career averages (Regular Season & Playoffs)
-- Championships and individual honors
-- Playoff performance and impact
-
-### Step 4: Conclusion & Narrative Verification
-Data-driven verdict on Jackson's complaint:
-- Did the Spurs limit Jackson?
-- Did the Spurs hide his inefficiencies?
-- Was he better when given opportunities elsewhere?
-
-### Step 5: Best Free NBA Statistics Resources
-Top 5 free databases for historical NBA research:
-1. Basketball-Reference.com
-2. NBA.com/stats
-3. Stathead Basketball
-4. Land of Basketball
-5. Cleaning the Glass
-
-## Key Findings
-
-**Preview of Conclusions:**
-
-✅ **Teammate Comparison**: Manu consistently outperformed Jackson in efficiency metrics during their time together on the Spurs.
-
-✅ **System Analysis**: Jackson received MORE playing time away from the Spurs, but his efficiency remained similar or declined.
-
-✅ **Career Overview**: Manu's sustained excellence (4 championships, multiple All-NBA selections, 16 seasons) far exceeds Jackson's journeyman career.
-
-**Verdict**: The statistical evidence does NOT support Jackson's "hampered by the system" narrative. The data suggests the Spurs system maximized Jackson's value while limiting exposure of his inefficiencies.
-
-## Visualizations Included
-
-The notebook generates multiple visualizations:
-- Bar charts comparing key metrics during overlap seasons
-- Career trajectory line graphs
-- Efficiency comparisons
-- Comprehensive verdict visualization (saved as PNG)
-
-## Data Sources
-
-All statistics are sourced from:
-- **Land of Basketball** (Season-by-season comparison PDF)
-- **Basketball-Reference.com** (Historical NBA statistics)
-- **Official NBA statistics**
-
-## Author Notes
-
-**Analysis Role**: Senior Sports Data Analyst & NBA Historian
-**Tone**: Objectively Analytical, Professional, Data-Driven, Nuanced
-**Purpose**: Investigate claims with rigorous statistical analysis
+🔴 **[VIEW THE LIVE WEB REPORT](https://rashad1019.github.io/Manu_Jackson/)** 🔴
 
 ---
 
-## Quick Start
+## 🎯 Project Overview
 
-```bash
-# 1. Ensure you're in the project directory
-cd D:\Coding\Manu_Jackson
+Stephen Jackson has famously claimed he was "hampered" by the San Antonio Spurs system and was a better player than Manu Ginobili. This project puts that claim to the test.
 
-# 2. Activate virtual environment
-.venv\Scripts\activate
+By analyzing historical data from the **2003 Championship season**, the **2012-13 reunion**, and Jackson's "freedom" years with other teams, we answer the question: **Does the data support the narrative?**
 
-# 3. Launch Jupyter
-jupyter lab
+## 📂 Access the Analysis
 
-# 4. Open jackson_vs_ginobili_analysis.ipynb
+We provide two ways to view the results, depending on your interest:
 
-# 5. Run all cells (Cell → Run All)
-```
-
-## Need Help?
-
-- **Jupyter not starting?** Make sure the virtual environment is activated
-- **Missing packages?** Run: `.venv\Scripts\python.exe -m pip install -r requirements.txt` (if requirements.txt exists)
-- **Kernel not found?** Select the Python interpreter from `.venv\Scripts\python.exe`
+| 🧠 **For General Readers** | 🛠️ **For Data Scientists** |
+| :--- | :--- |
+| **[Interactive Web Report](https://rashad1019.github.io/Manu_Jackson/)** | **[Jupyter Notebook Analysis](jackson_vs_ginobili_analysis.ipynb)** |
+| Clean summary of findings, charts, and the final verdict. No coding knowledge required. | The full Python code, data cleaning, processing, and raw matplotlib generation steps. |
 
 ---
 
-**Generated with data-driven analysis. All statistics verified against official NBA sources.**
+## 🔑 Key Findings
+
+*   ✅ **Teammate Comparison:** When sharing the court (same system, same coach), Manu Ginobili consistently outperformed Jackson in efficiency and playmaking.
+*   ✅ **The "Freedom" Effect:** When Jackson left the Spurs to find "more volume," he got more shots (PPG ↑ 75%) but his efficiency dropped (FG% ↓ 4.8%) and turnovers spiked.
+*   ✅ **The Verdict:** The data suggests the Spurs system **maximized** Jackson's value by hiding his inefficiencies. It did not hamper him; it protected him.
+
+---
+
+## 🛠️ Technical Stack
+
+*   **Language:** Python 3.10+
+*   **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, PDFPlumber
+*   **Data Sources:** Basketball-Reference, Land of Basketball (PDFs)
+
+## 🚀 Quick Start (Local Setup)
+
+If you want to run the code yourself:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Rashad1019/Manu_Jackson.git
+
+# 2. Navigate to directory
+cd Manu_Jackson
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the Jupyter Notebook
+jupyter lab
+```
+
+## 📬 Contact
+
+**Author:** Rashad Ferguson  
+**Email:** Rashad19@outlook.com  
+**GitHub:** [Rashad1019](https://github.com/Rashad1019)
